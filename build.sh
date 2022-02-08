@@ -39,4 +39,5 @@ else
 fi
 
 unzip $tarname
+cp completions/exa.zsh completions/_exa
 rm $tarname
