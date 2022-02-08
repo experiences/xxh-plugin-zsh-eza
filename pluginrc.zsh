@@ -4,6 +4,6 @@
 CURR_DIR="$(cd "$(dirname "$0")" && pwd)"
 plugin_name='xxh-plugin-zsh-exa'
 export PATH=$CURR_DIR/bin:$PATH
-source $CURR_DIR/completions/exa.zsh
-
+# source $CURR_DIR/completions/exa.zsh
+fpath=($CURR_DIR/completions $fpath)
 autoload -U compinit && compinit
