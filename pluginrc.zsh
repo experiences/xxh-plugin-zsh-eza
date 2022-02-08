@@ -9,5 +9,5 @@ plugin_name='xxh-plugin-zsh-exa'
 export PATH=$CURR_DIR/bin:$PATH
 # source $CURR_DIR/completions/exa.zsh
 fpath=($CURR_DIR/completions $fpath)
-cp $CURR_DIR/completions/exa.zsh $CURR_DIR/../../xxh-plugin-zsh-ohmyzsh/build/ohmyzsh/plugins/zsh-completions/src/_exa
-autoload -U compinit && compinit
+# cp $CURR_DIR/completions/exa.zsh $CURR_DIR/../../xxh-plugin-zsh-ohmyzsh/build/ohmyzsh/plugins/zsh-completions/src/_exa
+# autoload -U compinit && compinit
