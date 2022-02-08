@@ -8,4 +8,4 @@ plugin_name='xxh-plugin-zsh-exa'
 
 export PATH=$CURR_DIR/bin:$PATH
 fpath=($CURR_DIR/completions $fpath)
-alias ls='exa -g --group-directories-first --time-style=long-iso --icons'
+# alias ls='exa -g --group-directories-first --time-style=long-iso --icons'
