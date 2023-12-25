@@ -22,7 +22,7 @@ do
 done
 
 # portable_url='https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip'
-portable_url='https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-musl-v0.10.1.zip'
+portable_url='https://github.com/eza-community/eza/releases/download/v0.17.0/eza_x86_64-unknown-linux-musl.zip'
 tarname=`basename $portable_url`
 
 cd $build_dir
@@ -40,5 +40,5 @@ else
 fi
 
 unzip $tarname
-cp completions/exa.zsh completions/_exa
+# cp completions/exa.zsh completions/_eza
 rm $tarname
