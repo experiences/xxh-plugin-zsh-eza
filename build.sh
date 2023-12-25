@@ -40,5 +40,5 @@ else
 fi
 
 unzip $tarname
-# cp completions/exa.zsh completions/_eza
-rm $tarname
+cp completions/exa.zsh completions/_eza
+# rm $tarname
