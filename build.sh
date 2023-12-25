@@ -23,7 +23,7 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-for f in exa.zsh
+for f in eza.zsh
 do
     cp $CDIR/$f $completions_dir/
 done
