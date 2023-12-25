@@ -2,6 +2,7 @@
 
 CDIR="$(cd "$(dirname "$0")" && pwd)"
 build_dir=$CDIR/build
+completions_dir=$build_dir/completions
 
 while getopts A:K:q option
 do
@@ -15,10 +16,16 @@ done
 
 rm -rf $build_dir
 mkdir -p $build_dir
+mkdir -p $completions_dir
 
 for f in pluginrc.zsh
 do
     cp $CDIR/$f $build_dir/
+done
+
+for f in exa.zsh
+do
+    cp $CDIR/$f $completions_dir/
 done
 
 # portable_url='https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip'
@@ -40,5 +47,5 @@ else
 fi
 
 unzip $tarname
-cp completions/exa.zsh completions/_eza
-# rm $tarname
+cp completions/eza.zsh completions/_exa
+rm $tarname
