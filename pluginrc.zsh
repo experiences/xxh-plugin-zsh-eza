@@ -6,6 +6,6 @@
 CURR_DIR="$(cd "$(dirname "$0")" && pwd)"
 plugin_name='xxh-plugin-zsh-eza'
 
-export PATH=$CURR_DIR/:$PATH
+export PATH=$CURR_DIR:$PATH
 fpath=($CURR_DIR/completions $fpath)
 # alias ls='eza -g --group-directories-first --time-style=long-iso --icons'
